@@ -9,16 +9,23 @@ the zip function takes the len of the shortest list
 """
 
 countries = ["Ecuador", "Peru", "Colombia", "USA", "Brazil", "Chile"]
-capitals = ["Quito", "Lima", "Bogota", "Washintown DC", "Brasila"]
+capitals = ["Quito", "Lima", "Bogota", "Washintown DC", "Brasila", "Santiago"]
+cities = [
+    "Cuenca",
+    "Machu Pichu",
+    "Medelin",
+    "Los Angeles",
+    "Rio de Janeiro",
+    "Valparaiso",
+]
 
-
-countries_capitals = zip(countries, capitals)
+countries_capitals = zip(countries, capitals, cities)
 
 print(type(countries_capitals))
 
-for countries, capitals in countries_capitals:
+for countries, capitals, cities in countries_capitals:
 
-    print(countries, capitals)
+    print(countries, capitals, cities)
 
 
 print(type(list(countries_capitals)))
