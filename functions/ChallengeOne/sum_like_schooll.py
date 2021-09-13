@@ -3,7 +3,8 @@ from itertools import zip_longest
 
 def sum_like_in_school(number_1, number_2, base=10):
     digits_zipped = zip_longest(
-        reversed(str(number_1)), reversed(str(number_2)), fillvalue=0)
+        reversed(str(number_1)), reversed(str(number_2)), fillvalue=0
+    )
     carry = 0
     result = ""
     for digit_1, digit_2 in digits_zipped:
@@ -17,6 +18,4 @@ def sum_like_in_school(number_1, number_2, base=10):
     return int(result)
 
 
-print(
-    sum_like_in_school(1564, 587, 10)
-)
+print(sum_like_in_school(1564, 587, 10))

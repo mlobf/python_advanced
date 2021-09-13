@@ -10,7 +10,5 @@ enumerate_list = enumerate(fruits)
 
 for index, element in enumerate_list:
     filename = f"file{index}.jpg"
-
     print(filename)
-
-
+    
