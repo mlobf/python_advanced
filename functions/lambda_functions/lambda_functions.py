@@ -10,10 +10,19 @@ add = lambda x: x + 5
 print(add(10))
 """
 
+
 lambda_functions = [lambda x: x+j for j in range(3)]
 
 first_lambda_function = lambda_functions[0]
 
+# print(first_lambda_function(5))
 
 
-print(first_lambda_function(5))
+multiplication = lambda a, b, c: a * b * c
+
+p = multiplication(4,5,2)
+
+
+print(p)
+
+
