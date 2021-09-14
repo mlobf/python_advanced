@@ -18,11 +18,10 @@ first_lambda_function = lambda_functions[0]
 # print(first_lambda_function(5))
 
 
-multiplication = lambda a, b, c: a * b * c
+def multiplication(a, b, c): return a * b * c
 
-p = multiplication(4,5,2)
+
+p = multiplication(4, 5, 2)
 
 
 print(p)
-
-
