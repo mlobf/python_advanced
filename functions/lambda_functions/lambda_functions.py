@@ -16,6 +16,7 @@ lambda_functions = [lambda x: x+j for j in range(3)]
 first_lambda_function = lambda_functions[0]
 
 # print(first_lambda_function(5))
+# This is just another teste using manjaro.
 
 
 def multiplication(a, b, c): return a * b * c
