@@ -6,11 +6,13 @@ from itertools import zip_longest
     instead of the shortest
 """
 
-countries = ("Ecuador", "Peru", "Colombia", "USA", "Brazil", "Chile", "Bolivia")
+countries = ("Ecuador", "Peru", "Colombia",
+             "USA", "Brazil", "Chile", "Bolivia")
 
 capitals = ("Quito", "Lima", "Bogota", "Washintown DC", "Brasila", "Santiago")
 
-countries_capitals = zip_longest(countries, capitals, fillvalue="My Default City")
+countries_capitals = zip_longest(
+    countries, capitals, fillvalue="My Default City")
 
 print("------------------")
 
