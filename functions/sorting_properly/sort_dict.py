@@ -1,6 +1,8 @@
 
-fruits = {
+import pdb
 
+
+fruits = {
     'pineapple': 10,
     'watermelon': 50,
     'apple': 40,
@@ -24,4 +26,10 @@ def get_quantity(fruit):
 
 p = sorted(fruits, key=lambda fruit: fruits[fruit])
 
-print(p)
+# print(p)
+
+
+mylist = [9, 3, 6, 1, 5, 0, 8, 2, 4, 7]
+list_b = [6, 4, 6, 1, 2, 2]
+
+print({i: mylist.index(i) for i in list_b})

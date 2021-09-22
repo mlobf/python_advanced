@@ -8,7 +8,7 @@ print(lambda x: x for x in range(10))
 
 # lambda arguments: expression
 
+lambda_functions = [lambda x: x+j for j in range(3)]
 
-print(
-    lambda x
-)
+first_lambda_function = lambda_functions[0]
+print(first_lambda_function)
