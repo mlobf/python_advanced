@@ -11,7 +11,7 @@ print(add(10))
 """
 
 
-lambda_functions = [lambda x: x+j for j in range(3)]
+lambda_functions = [lambda x: x + j for j in range(3)]
 
 first_lambda_function = lambda_functions[0]
 
@@ -19,7 +19,8 @@ first_lambda_function = lambda_functions[0]
 # This is just another teste using manjaro.
 
 
-def multiplication(a, b, c): return a * b * c
+def multiplication(a, b, c):
+    return a * b * c
 
 
 p = multiplication(4, 5, 2)

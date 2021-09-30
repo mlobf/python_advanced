@@ -11,7 +11,7 @@ x = 5
 # print(lambda x: x + 1)
 # print(x)
 
-#l = (lambda x: x + 1)(5)
+# l = (lambda x: x + 1)(5)
 
 # print(l)
 

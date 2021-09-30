@@ -32,8 +32,3 @@ for i in x:
 
 
 # => End of the old school way to create a iter
-
-
-
-
-

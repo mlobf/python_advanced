@@ -1,18 +1,17 @@
-
 import pdb
 
 
 fruits = {
-    'pineapple': 10,
-    'watermelon': 50,
-    'apple': 40,
-    'grapes': 15,
+    "pineapple": 10,
+    "watermelon": 50,
+    "apple": 40,
+    "grapes": 15,
 }
 
 
 def get_quantity(fruit):
     """
-        Get the value 
+    Get the value
     """
     return fruits[fruit]
 

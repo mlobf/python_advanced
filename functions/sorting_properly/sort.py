@@ -1,4 +1,4 @@
-'''
+"""
     Sort method works only for lists
     Sorted functions works for any iterable
     you can specify the params reverse in both of then
@@ -6,11 +6,10 @@
 
     IMPORTANT functions never modify args
 
-'''
-
-list = ['abacate', 'kiwi', 'caju', 'damasco', 'coco']
-
+"""
+list = ["abacate", "kiwi", "caju", "damasco", "coco"]
 s = sorted(list, reverse=True)
-
-
 print(s)
+
+
+
