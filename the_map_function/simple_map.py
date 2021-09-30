@@ -15,8 +15,8 @@ new_fruits = []
 
 # print(new_fruits)
 
-
 result = map(lambda fruit: fruit.upper(), fruits)
+
 
 
 print(list(result))
