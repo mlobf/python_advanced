@@ -13,6 +13,7 @@ def process(fruit):
         resulting_string += " is great"
     return resulting_string
 
-result = map(process, fruits)
 
+result = map(process, fruits)
 print(list(result))
+
