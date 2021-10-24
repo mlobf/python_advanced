@@ -16,4 +16,3 @@ def process(fruit):
 
 result = map(process, fruits)
 print(list(result))
-

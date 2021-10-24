@@ -14,6 +14,3 @@ filtred_fruits = filter(lambda fruit: fruit.startswith("a") == True, fruits)
 # print(type(filtred_fruits))
 
 print(list(filtred_fruits))
-
-
-
