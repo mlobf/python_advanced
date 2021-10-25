@@ -33,11 +33,11 @@ from functools import reduce
 
 
 # print(reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]))
-#print(reduce(lambda x, y: x+y, range(1, 10000)))
+# print(reduce(lambda x, y: x+y, range(1, 10000)))
 
 myList = [1, 2, 200, 3, 4, 5, 90]
 
-prod = reduce((lambda x, y: x*y), myList)
+prod = reduce((lambda x, y: x * y), myList)
 
 """
     1 1 = 1
@@ -50,7 +50,7 @@ prod = reduce((lambda x, y: x*y), myList)
 
 print(prod)
 
-greatest = reduce((lambda x, y: y if(y > x) else x), myList)
+greatest = reduce((lambda x, y: y if (y > x) else x), myList)
 # Show the greatest number in myList
 
 print(greatest)

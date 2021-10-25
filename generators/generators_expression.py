@@ -14,10 +14,6 @@ numbers = [3, 6, 9]
 powers = (x ** 2 for x in numbers)
 
 
-# print(next(powers))
-# print(next(powers))
-# print(next(powers))
-
 for n in numbers:
     try:
         print(next(powers))
