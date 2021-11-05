@@ -14,7 +14,8 @@ def time_to_run(f):
 
 @time_to_run
 def hello_world():
-    print("hello world")
+    for _ in range(100):
+        print("hello world")
 
 
 hello_world()

@@ -1,6 +1,5 @@
 """
     Why use generators ?
-
     
         Because there easier to implement then iterators.
         Memory efficient.

@@ -3,10 +3,6 @@
     Aka -> filter or map
     Higher order functions, and this functions can return other
         functions also.
-    
-
-
-
 """
 # First define outside function.
 #
@@ -24,4 +20,3 @@ def hello_world():
 
 decorated_hello_word = wrapper(hello_world)
 
-decorated_hello_word()
