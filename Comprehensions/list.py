@@ -1,3 +1,5 @@
+import os
+
 result = [i ** 2 for i in [1, 2, 3, 4, 5]]
 
 print(result)
@@ -12,3 +14,6 @@ print(result)
 
 
 print("--------------------------------")
+
+
+
