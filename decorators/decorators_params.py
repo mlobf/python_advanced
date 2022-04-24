@@ -4,9 +4,12 @@ import time
 def time_to_run(f):
     def inner(*args, **kwargs):
         start = time.time()
+
         f(*args, **kwargs)
+
         end = time.time()
-        execution_time = end - start
+        execution_time = round(end - start, 10)
+
         print(f"This function took {execution_time}")
 
     return inner
