@@ -10,5 +10,11 @@ print(lambda x: x for x in range(10))
 
 lambda_functions = [lambda x: x + j for j in range(3)]
 
-first_lambda_function = lambda_functions[0]
-print(first_lambda_function)
+print(len(lambda_functions))
+
+print("---------------------")
+
+print((lambda x: x for x in lambda_functions))
+
+# first_lambda_function = lambda_functions[0]
+# print(first_lambda_function)
