@@ -8,9 +8,6 @@
     O aluno da primeira fila tem que ser mais baixo que o aluno da segunda fila.
 """
 
-from hashlib import new
-
-
 alunos_preto = [150, 179, 149, 152, 154]
 alunos_laranja = [162, 181, 151, 160, 170]
 
