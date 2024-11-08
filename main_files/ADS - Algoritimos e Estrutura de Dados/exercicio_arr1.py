@@ -11,9 +11,6 @@
     Parametro 1 => Array de inteiros
     Parametro 2 => Valor alvo que é a soma de dois numeros.
 """
-import re
-
-
 myarray = [3, 5, -4, 8, 11, 1, -1, 6]
 target = 10
 
@@ -23,7 +20,7 @@ def my_func(myarray, target):
     v1 = 0
     v2 = 0
     p1 = 0
-    p2 = 1
+    p2 = p1 +1
 
     resultado = {"p1": p1, "v1": v1, "p2": p2, "v2": v1, "soma": soma}
     # Metodo Força Bruta
@@ -31,17 +28,6 @@ def my_func(myarray, target):
         while p2 is not len(myarray):
             v1 = myarray[p1]
             v2 = myarray[p2]
-            """
-            print('------------')
-            print('P1', p1)
-            print('v1', v1)
-            print('')
-            print('P2', p2)
-            print('v2', v2)
-            print('------------')
-            print('SOMA =>', soma)
-            print('------------')
-            """
             soma = v1 + v2
             p2 += 1
             if soma == target:

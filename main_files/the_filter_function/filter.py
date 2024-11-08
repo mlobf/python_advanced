@@ -13,4 +13,29 @@ filtred_fruits = filter(lambda fruit: fruit.startswith("a") == True, fruits)
 
 # print(type(filtred_fruits))
 
+
+
+
+
+
 print(list(filtred_fruits))
+
+class Marcos:
+    def __init__(self,idade,nome):
+        self.idade=idade
+        self.nome=nome
+
+
+
+m = Marcos(20,'Marcos')
+
+print(m)
+
+
+
+
+
+
+
+
+

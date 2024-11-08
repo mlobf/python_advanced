@@ -54,3 +54,4 @@ greatest = reduce((lambda x, y: y if (y > x) else x), myList)
 # Show the greatest number in myList
 
 print(greatest)
+

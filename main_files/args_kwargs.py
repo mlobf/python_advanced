@@ -31,3 +31,10 @@ def print_fruits(**kwargs):
 
 
 print_fruits(apple=60, watermellon=100, grapes=200)
+
+
+
+
+
+
+

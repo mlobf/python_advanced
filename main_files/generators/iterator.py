@@ -9,8 +9,6 @@ print(next(fruits))
 """
 
 # This is eq as
-
-
 y = iter(range(1, 11))
 
 for i in y:
