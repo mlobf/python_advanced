@@ -1,7 +1,6 @@
 """Apenas uma abstracao de como pode ser implementado este processo
     de controle de total_de_creditos oriundo de free_games.
 """
-
 from typing import List
 from dataclasses import dataclass, field
 
@@ -25,11 +24,15 @@ class FreeGamesFinancial:
                 "Os totais de créditos e débitos não podem ser negativos.")
 
 
-class FreeGamesFinacialManager:
+class FreeGamesFinancialManager:
     """Gerenciador para a classe FreeGamesFinancial."""
 
     def __init__(self, financial: FreeGamesFinancial):
         self.financial = financial
+
+    def salva_status_no_mongodb(self):
+        """Salva copia da jogada no mongoDb"""
+        ...
 
     def adicionar_draw_state(self, valor: float) -> None:
         """Adiciona um valor à lista de jogadas."""
@@ -49,13 +52,18 @@ class FreeGamesFinacialManager:
             raise ValueError("O valor do pagamento não pode ser negativo.")
         self.financial.total_de_debitos += valor
 
-    def mostrar_resumo(self) -> None:
+    def __repr__(self) -> str:
         """Mostra um resumo dos dados financeiros."""
-        print(f"Descrição: {self.financial.descricao}")
-        print(f"Saldo Inicial: {self.financial.saldo_inicial}")
-        print(f"Total de Créditos: {self.financial.total_de_creditos}")
-        print(f"Total de Débitos: {self.financial.total_de_debitos}")
-        print(f"Jogadas: {self.financial.lista_jogadas}")
+
+        decricao = f"Descrição: {self.financial.descricao}"
+        saldo_inicial = f"Saldo Inicial: {self.financial.saldo_inicial}"
+        total_creditos = f"Total de Créditos: {self.financial.total_de_creditos}"
+        total_debitos = f"Total de Débitos: {self.financial.total_de_debitos}"
+        total_jogadas = f"Jogadas: {self.financial.lista_jogadas}"
+
+        return (print(
+            decricao + saldo_inicial + total_creditos+ total_debitos + total_jogadas + total_jogadas
+        ))
 
 
 # Exemplo de uso
@@ -63,13 +71,12 @@ try:
     financia = FreeGamesFinancial(
         saldo_inicial=100.0, descricao="Finanças de Jogos"
     )
-    manager = FreeGamesFinacialManager(financia)
 
+    manager = FreeGamesFinancialManager(financia)
     manager.adicionar_draw_state(10.0)
     manager.adicionar_premios(50.0)
     manager.adicionar_pagamentos(20.0)
-
-    manager.mostrar_resumo()
+    manager.__repr__()
 
 except ValueError as e:
     print(e)
